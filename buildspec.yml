@@ -4,10 +4,9 @@ phases:
   install:
     runtime-versions:
       java: corretto17
+      maven: 3.8
     commands:
-      - echo Installing Maven...
-      - apt-get update
-      - apt-get install -y maven
+      - echo Using pre-installed Maven and Java
   build:
     commands:
       - echo Building the project...
